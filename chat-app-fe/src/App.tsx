@@ -1,4 +1,4 @@
-import { List, PersonCircle, Search } from "react-bootstrap-icons";
+import { List, PersonCircle, Search, Image } from "react-bootstrap-icons";
 
 function App() {
   return (
@@ -28,7 +28,13 @@ function App() {
 
         {/*Messages chat*/}
         <div className="col-8 p-0">
-          <div className="h-100 bg-info"></div>
+          <div className="h-100">
+            {/* Top bar */}
+            <div className="d-flex align-items-center gap-3 p-3">
+              <Image className="fs-3" />
+              <h3 className="m-0">Real Estate Sale and Purchase</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>

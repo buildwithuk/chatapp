@@ -6,9 +6,9 @@ function App() {
       <div className="row h-100">
         {/*Contacts chat*/}
         <div className="col-4 p-0">
-          <div className="h-100 bg-light m-2">
+          <div className="h-100 bg-light">
             {/*Top bar*/}
-            <div className="border d-flex align-items-center gap-3 p-2 ">
+            <div className="border d-flex align-items-center gap-3 p-3 ">
               <PersonCircle className="fs-3"></PersonCircle>
 
               <div className="input-group">

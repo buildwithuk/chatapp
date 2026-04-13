@@ -6,6 +6,8 @@ import {
   CursorFill,
   PersonFill,
   BoxSeamFill,
+  PlusCircle,
+  InfoCircleFill,
 } from "react-bootstrap-icons";
 
 function App() {
@@ -118,84 +120,104 @@ function App() {
                 <div className="d-flex text-primary gap-3 align-items-center py-4 px-4 flex-shrink-0">
                   <BoxSeamFill className="fs-4" />
                   <p className="mb-0 lead">Topics</p>
+                  <button type="button" className="btn ms-auto">
+                    <PlusCircle className="fs-4 text-primary" />
+                  </button>
                 </div>
                 <div className="overflow-auto px-4" style={{ flexGrow: 1 }}>
                   <div className="d-flex flex-column gap-3">
                     <div className="d-flex align-items-center gap-3">
                       <button
                         type="button"
-                        className="btn align-items-center w-100 text-start"
+                        className="btn d-flex align-items-center w-100 text-start"
                       >
-                        <BoxSeamFill className="fs-5" />
-                        <span className="text-secondary mx-3">
-                          Real Estate Sale and Purchase
-                        </span>
+                        <BoxSeamFill className="fs-4 flex-shrink-0" />
+                        <div className="ms-3">
+                          <div className="text-secondary">
+                            Real Estate Sale and Purchanse{" "}
+                          </div>
+                          <div className="text-muted small">4 member(s)</div>
+                        </div>
                       </button>
                     </div>
                     <div className="d-flex align-items-center gap-3">
                       <button
                         type="button"
-                        className="btn align-items-center w-100 text-start"
+                        className="btn d-flex align-items-center w-100 text-start"
                       >
-                        <BoxSeamFill className="fs-5" />
-                        <span className="text-secondary mx-3">
-                          Tech Talk & Gadgets
-                        </span>
+                        <BoxSeamFill className="fs-4 flex-shrink-0" />
+                        <div className="ms-3">
+                          <div className="text-secondary">
+                            Tech Talk & Gadgets
+                          </div>
+                          <div className="text-muted small">8 member(s)</div>
+                        </div>
                       </button>
                     </div>
                     <div className="d-flex align-items-center gap-3">
                       <button
                         type="button"
-                        className="btn align-items-center w-100 text-start"
+                        className="btn d-flex align-items-center w-100 text-start"
                       >
-                        <BoxSeamFill className="fs-5" />
-                        <span className="text-secondary mx-3">
-                          Movie & TV Show Discussions
-                        </span>
+                        <BoxSeamFill className="fs-4 flex-shrink-0" />
+                        <div className="ms-3">
+                          <div className="text-secondary">
+                            Movie & TV Shows discussions
+                          </div>
+                          <div className="text-muted small">3 member(s)</div>
+                        </div>
                       </button>
                     </div>
                     <div className="d-flex align-items-center gap-3">
                       <button
                         type="button"
-                        className="btn align-items-center w-100 text-start"
+                        className="btn d-flex align-items-center w-100 text-start"
                       >
-                        <BoxSeamFill className="fs-5" />
-                        <span className="text-secondary mx-3">
-                          Fitness & Wellness
-                        </span>
+                        <BoxSeamFill className="fs-4 flex-shrink-0" />
+                        <div className="ms-3">
+                          <div className="text-secondary">
+                            Fitness & Wellness
+                          </div>
+                          <div className="text-muted small">14 member(s)</div>
+                        </div>
                       </button>
                     </div>
                     <div className="d-flex align-items-center gap-3">
                       <button
                         type="button"
-                        className="btn align-items-center w-100 text-start"
+                        className="btn d-flex align-items-center w-100 text-start"
                       >
-                        <BoxSeamFill className="fs-5" />
-                        <span className="text-secondary mx-3">
-                          Gaming Community
-                        </span>
+                        <BoxSeamFill className="fs-4 flex-shrink-0" />
+                        <div className="ms-3">
+                          <div className="text-secondary">Gaming Community</div>
+                          <div className="text-muted small">4 member(s)</div>
+                        </div>
                       </button>
                     </div>
                     <div className="d-flex align-items-center gap-3">
                       <button
                         type="button"
-                        className="btn align-items-center w-100 text-start"
+                        className="btn d-flex align-items-center w-100 text-start"
                       >
-                        <BoxSeamFill className="fs-5" />
-                        <span className="text-secondary mx-3">
-                          Travel & Adventure
-                        </span>
+                        <BoxSeamFill className="fs-4 flex-shrink-0" />
+                        <div className="ms-3">
+                          <div className="text-secondary">
+                            Travel & Adventure
+                          </div>
+                          <div className="text-muted small">1 member(s)</div>
+                        </div>
                       </button>
                     </div>
                     <div className="d-flex align-items-center gap-3">
                       <button
                         type="button"
-                        className="btn align-items-center w-100 text-start"
+                        className="btn d-flex align-items-center w-100 text-start"
                       >
-                        <BoxSeamFill className="fs-5" />
-                        <span className="text-secondary mx-3">
-                          Food & Cooking
-                        </span>
+                        <BoxSeamFill className="fs-4 flex-shrink-0" />
+                        <div className="ms-3">
+                          <div className="text-secondary">Food & Cooking </div>
+                          <div className="text-muted small">7 member(s)</div>
+                        </div>
                       </button>
                     </div>
                   </div>
@@ -208,9 +230,17 @@ function App() {
         {/* Messages chat */}
         <div className="col-8 p-0">
           <div className="h-100">
-            <div className="d-flex align-items-center gap-3 p-3">
-              <Image className="fs-3" />
-              <h3 className="m-0">Real Estate Sale and Purchase</h3>
+            <div className=" d-flex align-items-center gap-3 p-4">
+              <Image className="text-secondary fs-3" />
+              <div className="flex-grow-1">
+                <h3 className="text-secondary m-0">
+                  Real Estate Sale and Purchase
+                </h3>
+                <p className="text-muted mb-0">Someone is typing</p>
+              </div>
+              <button className="btn">
+                <InfoCircleFill className="text-muted fs-4" />
+              </button>
             </div>
           </div>
         </div>

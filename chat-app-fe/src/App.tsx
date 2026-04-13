@@ -7,6 +7,7 @@ import {
   PersonFill,
   BoxSeamFill,
   PlusCircle,
+  InfoCircleFill,
 } from "react-bootstrap-icons";
 
 function App() {
@@ -229,9 +230,17 @@ function App() {
         {/* Messages chat */}
         <div className="col-8 p-0">
           <div className="h-100">
-            <div className="d-flex align-items-center gap-3 p-3">
-              <Image className="fs-3" />
-              <h3 className="m-0">Real Estate Sale and Purchase</h3>
+            <div className=" d-flex align-items-center gap-3 p-4">
+              <Image className="text-secondary fs-3" />
+              <div className="flex-grow-1">
+                <h3 className="text-secondary m-0">
+                  Real Estate Sale and Purchase
+                </h3>
+                <p className="text-muted mb-0">Someone is typing</p>
+              </div>
+              <button className="btn">
+                <InfoCircleFill className="text-muted fs-4" />
+              </button>
             </div>
           </div>
         </div>

@@ -1,10 +1,7 @@
 import {
   List,
-  PersonCircle,
   Search,
-  Image,
   CursorFill,
-  PersonFill,
   BoxSeamFill,
   PlusCircle,
   InfoCircleFill,
